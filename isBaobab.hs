@@ -4,6 +4,7 @@ data BTree a = Empty | Node a (BTree a) (BTree a) deriving (Show, Eq)
 -- i.e a binary tree where every node contains a number that is greater
 -- than the sum of every other node in both subtrees
 -- an empty tree (or a leaf) is obviously a Baobab
+-- sumTree is in the sumTree.hs file
 
 isBaobab :: (Ord a, Num a) => BTree a -> Bool
 isBaobab Empty = True
